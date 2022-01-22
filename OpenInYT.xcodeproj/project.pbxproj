@@ -11,7 +11,40 @@
 		0CBB257F279CA63800CF57F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB257E279CA63800CF57F4 /* ContentView.swift */; };
 		0CBB2581279CA63900CF57F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB2580279CA63900CF57F4 /* Assets.xcassets */; };
 		0CBB2584279CA63900CF57F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB2583279CA63900CF57F4 /* Preview Assets.xcassets */; };
+		0CBB2591279CA64800CF57F4 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB2590279CA64800CF57F4 /* SafariWebExtensionHandler.swift */; };
+		0CBB2594279CA64800CF57F4 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB2593279CA64800CF57F4 /* _locales */; };
+		0CBB2596279CA64800CF57F4 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB2595279CA64800CF57F4 /* images */; };
+		0CBB2598279CA64800CF57F4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB2597279CA64800CF57F4 /* manifest.json */; };
+		0CBB259C279CA64800CF57F4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB259B279CA64800CF57F4 /* content.js */; };
+		0CBB259E279CA64800CF57F4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB259D279CA64800CF57F4 /* popup.html */; };
+		0CBB25A0279CA64800CF57F4 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB259F279CA64800CF57F4 /* popup.css */; };
+		0CBB25A2279CA64800CF57F4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB25A1279CA64800CF57F4 /* popup.js */; };
+		0CBB25A6279CA64800CF57F4 /* WebExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0CBB258E279CA64800CF57F4 /* WebExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CBB25A4279CA64800CF57F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CBB2571279CA63800CF57F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CBB258D279CA64800CF57F4;
+			remoteInfo = WebExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0CBB25AA279CA64800CF57F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0CBB25A6279CA64800CF57F4 /* WebExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0CBB2579279CA63800CF57F4 /* OpenInYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenInYT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +52,27 @@
 		0CBB257E279CA63800CF57F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CBB2580279CA63900CF57F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CBB2583279CA63900CF57F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CBB258E279CA64800CF57F4 /* WebExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WebExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CBB2590279CA64800CF57F4 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		0CBB2593279CA64800CF57F4 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		0CBB2595279CA64800CF57F4 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		0CBB2597279CA64800CF57F4 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		0CBB259B279CA64800CF57F4 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		0CBB259D279CA64800CF57F4 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		0CBB259F279CA64800CF57F4 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		0CBB25A1279CA64800CF57F4 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		0CBB25A3279CA64800CF57F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0CBB2576279CA63800CF57F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CBB258B279CA64800CF57F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBB257B279CA63800CF57F4 /* OpenInYT */,
+				0CBB258F279CA64800CF57F4 /* WebExtension */,
 				0CBB257A279CA63800CF57F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBB2579279CA63800CF57F4 /* OpenInYT.app */,
+				0CBB258E279CA64800CF57F4 /* WebExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +119,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0CBB258F279CA64800CF57F4 /* WebExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0CBB2590279CA64800CF57F4 /* SafariWebExtensionHandler.swift */,
+				0CBB25A3279CA64800CF57F4 /* Info.plist */,
+				0CBB2592279CA64800CF57F4 /* Resources */,
+			);
+			path = WebExtension;
+			sourceTree = "<group>";
+		};
+		0CBB2592279CA64800CF57F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CBB2593279CA64800CF57F4 /* _locales */,
+				0CBB2595279CA64800CF57F4 /* images */,
+				0CBB2597279CA64800CF57F4 /* manifest.json */,
+				0CBB259B279CA64800CF57F4 /* content.js */,
+				0CBB259D279CA64800CF57F4 /* popup.html */,
+				0CBB259F279CA64800CF57F4 /* popup.css */,
+				0CBB25A1279CA64800CF57F4 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +153,34 @@
 				0CBB2575279CA63800CF57F4 /* Sources */,
 				0CBB2576279CA63800CF57F4 /* Frameworks */,
 				0CBB2577279CA63800CF57F4 /* Resources */,
+				0CBB25AA279CA64800CF57F4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0CBB25A5279CA64800CF57F4 /* PBXTargetDependency */,
 			);
 			name = OpenInYT;
 			productName = OpenInYT;
 			productReference = 0CBB2579279CA63800CF57F4 /* OpenInYT.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0CBB258D279CA64800CF57F4 /* WebExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CBB25A7279CA64800CF57F4 /* Build configuration list for PBXNativeTarget "WebExtension" */;
+			buildPhases = (
+				0CBB258A279CA64800CF57F4 /* Sources */,
+				0CBB258B279CA64800CF57F4 /* Frameworks */,
+				0CBB258C279CA64800CF57F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebExtension;
+			productName = WebExtension;
+			productReference = 0CBB258E279CA64800CF57F4 /* WebExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +193,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					0CBB2578279CA63800CF57F4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					0CBB258D279CA64800CF57F4 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -116,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				0CBB2578279CA63800CF57F4 /* OpenInYT */,
+				0CBB258D279CA64800CF57F4 /* WebExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +226,20 @@
 			files = (
 				0CBB2584279CA63900CF57F4 /* Preview Assets.xcassets in Resources */,
 				0CBB2581279CA63900CF57F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CBB258C279CA64800CF57F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBB25A0279CA64800CF57F4 /* popup.css in Resources */,
+				0CBB259E279CA64800CF57F4 /* popup.html in Resources */,
+				0CBB2596279CA64800CF57F4 /* images in Resources */,
+				0CBB2598279CA64800CF57F4 /* manifest.json in Resources */,
+				0CBB2594279CA64800CF57F4 /* _locales in Resources */,
+				0CBB259C279CA64800CF57F4 /* content.js in Resources */,
+				0CBB25A2279CA64800CF57F4 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +255,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CBB258A279CA64800CF57F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBB2591279CA64800CF57F4 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CBB25A5279CA64800CF57F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 0CBB258D279CA64800CF57F4 /* WebExtension */;
+			targetProxy = 0CBB25A4279CA64800CF57F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0CBB2585279CA63900CF57F4 /* Debug */ = {
@@ -264,8 +394,10 @@
 		0CBB2588279CA63900CF57F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OpenInYT/OpenInYT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInYT/Preview Content\"";
@@ -284,6 +416,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kingbri.OpenInYT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,8 +426,10 @@
 		0CBB2589279CA63900CF57F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OpenInYT/OpenInYT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenInYT/Preview Content\"";
@@ -313,6 +448,71 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kingbri.OpenInYT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0CBB25A8279CA64800CF57F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebExtension/WebExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A74DBQ6S3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WebExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.kingbri.OpenInYT.WebExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CBB25A9279CA64800CF57F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebExtension/WebExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A74DBQ6S3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WebExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.kingbri.OpenInYT.WebExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,6 +536,15 @@
 			buildConfigurations = (
 				0CBB2588279CA63900CF57F4 /* Debug */,
 				0CBB2589279CA63900CF57F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CBB25A7279CA64800CF57F4 /* Build configuration list for PBXNativeTarget "WebExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CBB25A8279CA64800CF57F4 /* Debug */,
+				0CBB25A9279CA64800CF57F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
